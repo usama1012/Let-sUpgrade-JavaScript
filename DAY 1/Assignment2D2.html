@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <h1>Difference bwtween var let and const</h1>
+</head>
+<body>
+    <script>
+        /*There is a basic difference between var let and constant on the basic of the 
+        updation and redeclaration 
+        1.Var:Var can be redeclared or updated within its scope
+        that is n the scope that it has been designed 
+        2. let:let variable once declared can not be declared again but it can be updated
+        this is usefull when we have more than one developer and we dont want the 
+        variable to be redeclare 
+        3.Const: Constants as the name suggest cannot be updated or redeclared 
+        examples given below*/
+        var a = "hey hi";
+        document.write(a+"   Declaring ")
+        var a = "say Hello instead";
+        document.write(a+"  Re declaring ")
+        a="Say just hey "
+        document.write(a+"   Updating ")
+        
+
+        
+        
+    </script>
+    <p>Talking about let now</p>
+    <script>
+        let b="Trying let "
+        document.write("Declaring let \n"+b)
+        b="Making changes with just updating  "
+        document.write("Updating  let \n"+b)
+        let b="Re declaring let "
+        document.write("re Declaring let should pop up an error \n"+b)
+        console.error("Cannot redeclare let ")
+    </script>
+    <p>Trying const</p>
+    <script>
+        const g="9.18 "
+        document.write(g)
+        const g=10
+        g=11
+        //Here they give out an error in the console as we are trying to redeclare
+        //let and trying to redeclare and update const as that is not possible or allowed 
+        //As there is an error the whole thing wont get printed snd the console would put up an error
+
+    </script>
+    
+</body>
+</html>

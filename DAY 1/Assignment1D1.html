@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <h1> Funtions with console </h1>
+</head>
+<body>
+    <script>
+        console.log("log()  method")
+        //.log() method is used to print something inn the console 
+        console.error("error() method ")
+        //This pops up in the console as an error in red
+        console.warn("warn() method")
+        //this will pop an warning for an specific acton when we want it to in yellow
+        console.clear()
+        //This will just lear the whole console whatever previously has been typed in there it will clear it out
+        console.time('abc'); 
+    let fun =  function(){ 
+     console.log('fun is running'); 
+    } 
+    let fun2 = function(){ 
+     console.log('fun2 is running..'); 
+    } 
+    fun(); // calling fun(); 
+    fun2(); // calling fun2(); 
+    console.timeEnd('abc'); 
+    //When we have to check the time taken by the block to be executed we use time() and timeEnd()
+    //so we can get the time the block has taken to be executed 
+    console.table({a:1,b:2})
+    //This object will create an table in the console 
+    for(let i=0;i<5;i++){ 
+    console.count(i); 
+    } 
+    //Simple count method to count the number of the tmes the loop has been working or has been executed 
+    console.group('simple'); 
+    console.warn('warning!'); 
+    console.error('error here'); 
+    console.log('vivi vini vici'); 
+    console.groupEnd('simple'); 
+    console.log('new section'); 
+    //.group and .groupEnd are same as time and time end here these 2 methods group the data 
+    //written between them with some indetation 
+    
+
+    </script>
+    
+</body>
+</html>
