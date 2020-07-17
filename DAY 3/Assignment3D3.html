@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 Day 3 </title>
+</head>
+<body>
+    <h1>Grading a student according to his marks </h1>
+        <script>
+            
+            let marks =prompt("Enter your marks to find the grade ")
+            if(marks>=1 && marks<=100){
+
+            
+            switch(true){
+                case marks>=85:
+                    console.log("Marks are "+marks+"grade is A ");
+                    break;
+                case marks<85 && marks>=70:
+                    console.log("Marks are "+marks+"grade is B ");
+                    break;
+                case marks<70 && marks>=55:
+                    console.log("Marks are "+marks+"grade is C ");
+                    break;
+                case marks<55 && marks>=40:
+                    console.log("Marks are "+marks+"grade is D ");
+                    break;
+                default:
+                    console.log("Marks are "+marks+"grade is F ");
+                    break;
+            }
+            }
+            else{
+                console.log("Enter valid marks ")
+            }
+            if(marks>=85){
+                console.log("Marks are "+marks+"grade is A ");
+            }
+            else if (marks<85 && marks>=70){
+                console.log("Marks are "+marks+"grade is B ");
+            }
+            else if (marks<70 && marks>=55){
+                console.log("Marks are "+marks+"grade is C ");
+            }
+            else if(marks<55 && marks>=40){
+                console.log("Marks are "+marks+"grade is D ")
+            }
+            else {
+                console.log("Marks are "+marks+"grade is F ")
+            }
+            let grade=(marks>=85)?"Marks are "+marks+"grade is A ":
+                      (marks<85 && marks>=70)?"Marks are "+marks+"grade is B ":
+                      (marks<70 && marks>=55)?"Marks are "+marks+"grade is C ":
+                      (marks<55 && marks>=40)?"Marks are "+marks+"grade is D ":
+                        "Marks are "+marks+"grade is F ";
+            console.log(grade)
+
+
+        </script>
+    
+</body>
+</html>
