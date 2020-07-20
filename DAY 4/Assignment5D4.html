@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 Day 4 </title>
+</head>
+<body>
+    <script>
+        sales=Number(prompt("Enter the sales you have achieved "))
+        if (sales<=5000){
+            rew=sales*.02
+            console.log("your reward is "+rew)
+        }
+        else if (sales>5000 && sales<=10000){
+            rew=(5000*.02)+((sales-5000)*.05)
+            console.log("Your reward is "+rew)
+
+        }
+        else if (sales>10000 && sales <=20000){
+            rew=(5000*.02)+(10000*.05)+((sales-10000)*.07)
+            console.log("Your reward is "+rew)
+        }
+        else if(sales >20000){
+            rew=(5000*.02)+(10000*.05)+(20000*.07)+((sales-20000)*.1)
+            console.log("Your reward is "+rew)
+        }
+        else{
+            console.log("Enter valid sales ")
+        }
+    </script>
+    
+</body>
+</html>
