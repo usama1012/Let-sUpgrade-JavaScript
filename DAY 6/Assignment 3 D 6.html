@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Please enter your name", " ");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! you are welcome";
+  }
+<button onclick= "myFunction()">toggle
+ </button>
+ 
+<p id="demo"></p>
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+}
+</script>
+
+</body>
+</html>
